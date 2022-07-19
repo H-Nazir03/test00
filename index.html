@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcuticon icon" href="https://upload.wikimedia.org/wikipedia/commons/5/5a/%D8%B4%D8%B9%D8%A7%D8%B1-%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A5%D8%AF%D9%84%D8%A8.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Gulzar&family=Poppins:wght@100;200;300;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Poppins:wght@100;200;300;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>
+            All
+    </title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;    
+    scroll-behavior:smooth;
+}
+:root
+{
+    --main-color : #097e8dfa;
+    --second-color : #2f4bfcc0;
+    --three-color: #9d149d;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color: #dad9d9ea;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+header
+{
+    width: 100%;
+    height: auto;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1414131;
+}
+header .logo
+{
+    max-width: 5.2%;
+    padding: 1%;
+}
+header nav ul
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li 
+{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right :7%;
+
+}
+header nav ul li a 
+{
+    text-decoration: none;
+    color: #bcbcbc;
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    font-size: 1.1em;
+    transition: 0.2s ease-in-out;
+}
+header nav ul li a:hover 
+{
+    color: #eee;
+    transform: scale(1.02);
+}
+header .btn-mneu
+{
+    border: none;
+    background: transparent;
+    font-size: 1.8em;
+    color: #dcdcdc;
+    padding: 1%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+header .btn-mneu:hover
+{
+    color: #eee;
+    transform: scale(1.02);
+}
+header .btn-mneu i:nth-child(2)
+{
+    display: none;
+}
+.team-container
+{
+    width:100%;
+    height: auto;
+}
+.text
+{
+    color:var(--main-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    margin: 5% 0;
+}
+.row
+{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+@media(max-width: 768px)
+{
+    .row{
+        width: 100%;
+    }
+}
+.profile-card
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 270px;
+    height: 250px;
+    margin: 20px 10px 10px 10px;
+}
+@media(max-width: 468px)
+{
+    .profile-card
+    {
+        width: 290px;
+        height: 250px;
+    }
+}
+.profile-content
+{
+    padding:15px;
+}
+.img-chanell{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.profile-image
+{
+    text-align: center;
+}
+.desc
+{
+    text-align: center;
+}
+.desc h2
+{
+    color: rgb(12,172,150);
+    font-size: 20px;
+}
+.desc p{
+    font-size: 13px;
+    line-height: 1.3em;
+    margin-top: -10px;
+    color: #000000;
+}
+.Go-Links
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chanell-a
+{
+    color: var(--main-color);
+    width: 110px;
+    cursor: pointer;
+    height: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 3px #e6e6e6;
+    border-radius: 3px;
+    outline:none;
+    border:solid var(--main-color) 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 1s infinite alternate;
+}
+.chanell-a span
+{
+    margin-left: 5px;
+}
+@keyframes animate
+{
+    form
+    {
+        transform:scale(0.9);
+    }
+    to
+    {
+        transform: scale(1.08);
+    }
+}
+
+/* Video Started */
+
+.container-video
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.video-js
+{
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: none;
+    transition-delay: 3s;
+    
+}
+input[type = radio]
+{
+    display: none;
+}
+#start:checked ~ .video-js 
+{
+    display: flex;
+    width:100%;
+    height: 500.25px;
+}
+.X-video
+{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--main-color);
+    font-size: 2em;
+    color: #ddd;
+    font-weight:550;
+    cursor:  pointer;
+    padding: 1%;
+    z-index: 101313130;
+    position: absolute;
+    left: 94%;
+    top: 2%;
+    transition-delay: 2.2s;
+    z-index: 2;
+}
+
+#start:checked ~ .X-video
+{
+display: flex;
+}
+
+.start-video
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    background: var(--main-color);
+    border: none;
+    font-size: 2em;
+    color: #ddd;
+    font-weight:200;
+    font-family:'Trebuchet MS', sans-serif;
+    cursor:  pointer;
+    padding: 2%;
+    letter-spacing: 1.4px;
+    animation: start-video-animate 1.4s infinite alternate ease-in-out;
+    opacity: 1;
+}
+@keyframes start-video-animate
+{
+    from
+    {
+        transform: translate(-50%,-58%);
+    }
+    to
+    {
+        transform: translate(-50% ,-42%);
+    }
+}
+
+/* ***********************************************Start Conect Us *********************************************** */
+.container-Conect
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-contect
+{
+    position: relative;
+    width: 300px;
+    height: 410px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-Conect
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 5px #b8b9be , -2px -2px 5px #FFF;
+    transition: .5s;
+    background:#f1f1f1;
+    transition-delay: .5s;
+    overflow: hidden;
+    border-radius: 0 0 30px 0 ;
+    z-index: 2;
+}
+
+.imgbox, .info
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .4s;
+}
+.imgbox
+{   top: 7%;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow:  0 2px 3px #999;
+}
+.imgbox .img-Conect
+{
+    height: 100%;
+}
+.info
+{
+    text-align: center;
+    width: 286px;
+    top: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #555;
+}
+.info h2
+{
+    color: #000047;
+}
+.info h4
+{
+    color:#ff5596;
+    margin-bottom: 5px;
+}
+.txt 
+{
+    padding: 7px;
+    margin-bottom: 5px;
+    line-height: 1.5em;
+}
+.skills
+{
+    display: flex;
+    width: 230px;
+    justify-content: end;
+}
+.i-Conect,.btn-Conect
+{
+    display: grid !important;
+    font-size: 1.2em;
+    width: 50px;
+    height: 50px;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.skills i 
+{
+    border: 1px solid #fff;
+    background: #eee;
+}
+.btn-Conect
+{
+    position: absolute;
+    top: 87%;
+    left: 80%;
+    transform: translate(-110% , -110%);
+    z-index: 9;
+    cursor: pointer;
+    animation: animate-Conect 1s infinite linear alternate;
+}
+@keyframes animate-Conect
+{
+    from
+    {
+        transform: scale(0.9);
+    }
+    to
+    {
+        transform: scale(1.05);
+    }
+}
+.icons-conect
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    /* background: #fff; */
+    transition: .5s;
+    transition-delay: 1s;
+    z-index: 1;
+}
+.icons-conect::before,.icons::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    width: 120%;
+    height: 120%;
+    border: solid 2px #ff5596;
+}
+.icons-conect::after
+{
+    width: 80%;
+    height: 80%;
+    border-color: var(--color6) ;
+}
+.icons-conect a i
+{
+    position: absolute;
+    width: 16.68%;
+    height: 16.68%;
+}
+
+.icons-conect a:nth-child(1) i
+{
+    left: 91.66667%;
+    top: 41.66664%;
+}
+
+.icons-conect a:nth-child(2) i
+{
+    left:77% ;
+    top:77% ;
+}
+
+.icons-conect a:nth-child(3) i
+{
+    left: 41.66664% ;
+    top: 91.66667% ;
+}
+
+.icons-conect a:nth-child(4) i
+{
+    left: 6.333333%;
+    top: 77%;
+}
+
+.icons-conect a:nth-child(5) i
+{
+    left:-8.333334% ;
+    top: 41.666664%;
+}
+
+.icons-conect a:nth-child(6) i
+{
+    left:6.333333% ;
+    top: 6.333333%;
+}
+
+.icons-conect a:nth-child(7) i
+{
+    left:41.666664% ;
+    top: -8.333334%;
+}
+
+.icons-conect a:nth-child(8) i
+{
+    left:77% ;
+    top: 6.3333333%;
+}
+
+.icons-conect i
+{
+    cursor: pointer;
+    border: 2px solid #f1f1f1;
+    box-shadow: inset 2px 2px 5px #b8b9be , inset -3px -3px 5px #fff;
+    color: #999;
+    text-shadow: 1px 1px 1px #222 , -1px -1px 1px #fff;
+    transition: .6s;
+}
+
+.icons-conect i:hover
+{
+    text-shadow: none;
+    box-shadow:inset -2px -2px 5px #b8b9be ,
+                inset 3px 3px 5px #fff,
+                inset 1px 1px #2225,
+                1px 2px 1px #0003
+}
+
+
+.btn-Conect:focus ~.content-Conect
+{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+.btn-Conect:focus ~.card-contect .imgbox
+{
+    cursor: pointer;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.btn-Conect:focus ~ .content-Conect .info
+{
+    top: 120%;
+}
+
+.btn-Conect:focus ~ .icons-conect
+{
+    width: 300px;
+    height: 300px;
+}
+.btn-Conect:focus
+{
+    opacity: 0;
+}
+.btn-Conect:not(:focus) ~ .content-Conect .info ,
+.btn-Conect:not(:focus) ~ .content-Conect .imgbox
+{
+    transition-delay: .6s;
+} 
+.btn-Conect:not(:focus) ~ .icons-conect
+{
+    transition-delay: .2s;
+}
+.btn-Conect:not(:focus)
+{
+    transition-delay: 1s;
+}
+/* ***********************************************End Conect Us ************************************************ */
+/* ***********************************************Start Mnew  ************************************************ */
+.container_mneu
+{
+    height: 100%;
+    background: #d3d9d1e3;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.02);
+    width: 0%;
+    transition: 0.7s;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3183838383;
+    border: 1px solid #333;
+    margin-top: 7% ;
+    border-top: none;
+}
+.container_mneu  a
+{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4em;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+    padding: 4%;
+    transition: 0.5s  ease-in-out ;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.container_mneu a:not(.active):hover
+{
+    background: rgba(100,100,100,.4);
+    color: #000;
+}
+.buttons
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background: green;
+    position: fixed;
+    z-index: 1231233;
+    top: 1%;
+    right: 1%;
+}
+.buttons button
+{
+    background: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.buttons button i:nth-child(2)
+{
+    display: none;
+}
+.thems
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4em;
+}
+.thems i:nth-child(1)
+{
+    color: #333;
+    cursor: pointer;
+}
+.thems i:nth-child(2)
+{
+    color: #ff0;
+    cursor: pointer;
+}
+.colors
+{
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.4em;
+}
+.colors i:nth-child(1)
+{
+    color: #333;
+    cursor: pointer;
+}
+
+.colors i:nth-child(2)
+{
+    color: #333;
+    cursor: pointer;
+}
+.colors i:nth-child(3)
+{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.active
+{
+    background: rgba(16, 15, 15, 0.605);
+}
+/**************************************** Style Menu End ***************************************/
+/* Footer */
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    height: 200%;
+}
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 30%;
+}
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+.footer-distributed h3 span {
+    color: var(--main-color);
+}
+/* Footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+.footer-distributed .footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+/* Footer Right */
+.footer-distributed .footer-right {
+    width: 30%;
+}
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+.footer-links a:hover {
+    color: #aaa;
+}
+@media (max-width: 880px)
+{
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+.footer-center
+{
+    position: relative;
+}
+.footer-center .top
+{
+    width: 250px;
+    height: 50px;
+    background: green;
+    margin: auto;
+
+}
+.footer-center .middle
+{
+    width: 250px;
+    height: 50px;
+    background: #ddd;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-center .middle span
+{
+    min-width: 17%;
+    height: 85%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background: red;
+}
+.footer-center .bottom
+{
+    width: 250px;
+    height: 50px;
+    background: #112;
+    margin: auto;
+}
+.landing
+{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin:0 5%;
+}
+.landing img
+{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    image-orientation: flip;
+    position: relative;
+
+}
+.landing::after
+{
+    content: "N_A For Ever";
+    width: 100%;
+    height: 100%;
+    z-index: 13313;
+    position: absolute;
+    display: flex;
+    font-size: 1.6em;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu VIC WA NT Beginner';
+    color: #bdbdbd;
+    font-weight: 800;
+    top: 40%;
+}
+@media screen and (max-width : 1000px)
+{
+    .landing::before
+    {
+        font-size: 2em;
+
+    }
+}
+
+@media screen and (max-width : 474px)
+{
+    .landing::before
+    {
+        font-size: 1em;
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+                                <!--*********************************************** Header Started*********************************************** -->
+
+<header>
+    <button class="btn-mneu"  onclick="open_close_menu()" >
+        <i class="fa-solid fa-bars open_icon"></i>
+        <i class="fa-solid fa-xmark close_icon"></i>
+</button>
+    <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Connect">Connect</a></li>
+            <li><a href="#Video">Video</a></li>
+            <li><a href="#Channels">Channels</a></li>
+        </ul>
+    </nav>
+
+    <img src="img/logo.png" a   lt="logo" class="logo">
+
+</header>
+<!-- Start Mneu  -->
+<div class="container_mneu">
+    <a href="#home" class="active mneu-a" ><i class="fa-solid fa-house"></i> الصـفـحة الرئيـسـية</a>
+
+        <a href="year1i.html" class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة أولــى معهد</a>
+        <a href="year2i.html" class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة ثـانـيـة معهد</a>
+
+
+
+        <a href="year2c.html"class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة أولــى كلية</a>
+        <a href="year2c.html"class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة ثـانـيـة كلية</a>
+        <a href="year3c.html"class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة ثـالـثـة كلية</a>
+        <a href="year4c.html"class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة رابـعـة كلية</a>
+        <a href="year5c.html"class="mneu-a"> <i class="fa-solid fa-graduation-cap"></i> ســنــة خـامـسـة كلية</a>
+        <div class="thems">
+            <i class="fa-solid fa-moon night" onclick="Darked()"></i>
+            <i class="fa-solid fa-sun light" onclick="Lighted()"></i>
+        </div>
+        <div class="colors">
+            <i class="fa-solid fa-paint-roller Blue" onclick="Blued()"></i>
+            <i class="fa-solid fa-paint-roller Violet"onclick="Violeted()"></i>
+            <i class="fa-solid fa-paint-roller Green"onclick="Greened()"></i>
+        </div>
+</div>
+                                <!--*********************************************** Header End*********************************************** -->
+
+                                <!--*********************************************** Landing Started*********************************************** -->
+
+                                <section class="landing" id="home">
+                                    <img src="img/landing.jpg" alt="photo" class="Land-img">
+                                    <span class="landing-span"></span>
+                                </section>
+                                <!--*********************************************** Landing End*********************************************** -->
+                                <!--*********************************************** Chanells Started*********************************************** -->
+
+        <div class="team_container" onclick="closemneuside()">
+            <div class="text" id="Channels">Chanells of Collage</div>
+        </div>
+        <div class="row">
+            <!--First User design starts here-->
+            <div class="profile-card">
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="img/Ahmed_shakkor.jpg" alt="photo" class="img-chanell">
+                    </div>
+                    <div class="desc">
+                        <h2 style="margin: 12% 0;" class="channel-h2">Ahmed shakkor</h2>
+                    </div>
+                    <div class="Go-Links">
+                        <a class="chanell-a" href="https://www.youtube.com/channel/UCKO_RrL2ezJntRQmhVzG9xg" target="_blank"><span>Follow</span><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!--First user design ends here-->
+            <!--second User design starts here-->
+            <div class="profile-card">
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="img/Ahmed_Al_Masri.jpg" alt="photo" class="img-chanell">
+                    </div>
+                    <div class="desc">
+                        <h2 style="margin: 12% 0;" class="channel-h2">Ahmed Al Masri</h2>
+                    </div>
+                    <div class="Go-Links">
+                        <a class="chanell-a" href="https://www.youtube.com/c/ahmedalmasri" target="_blank"><span>Follow</span><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!--second user design ends here-->
+            <!--third User design starts here-->
+            <div class="profile-card">
+                <div class="profile-content">
+                    <div class="profile-image">
+                        <img src="img/Information_Technology.jpg" alt="photo" class="img-chanell">
+                    </div>
+                    <div class="desc">
+                        <h2 style="margin: 12% 0;" class="channel-h2">Information Technology</h2>
+                    </div>
+                    <div class="Go-Links">
+                        <a class="chanell-a" href="https://www.youtube.com/channel/UCi4FjA3ixgY1Zkg01_uZcOg" target="_blank"><span>Follow</span><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <!--third user design ends here-->
+        </div>
+
+                                <!--*********************************************** Chanells End*********************************************** -->
+
+                                <!--*********************************************** Video Started********************************************** -->
+                                <div class="text" id="Video">Video</div>
+
+                                <div class="container-video">
+
+
+                                    <input type="radio" name="radio-video" id="start">
+                                    
+                                    <label for="start" class="start-video">Start</label>
+                                    
+                                    <input type="radio" name="radio" id="X">
+                                    
+                                    <label for="X" onclick="video()" class="X-video">X</label>
+                            
+                                    <video class="video-js" src="n1.mp4"  controls>
+                            </video>
+                            
+                                </div>
+
+                        <!--*********************************************** Video End*************************************************** -->
+
+                        <!--***********************************************  Start Conect Us *********************************************** -->
+
+                        <div class="container-Conect"  >
+                            <h2 class="text title-conect" id="Connect">Concet With us From Here</h2>
+
+                        <div class="card-contect A">
+                            <button class="fa-solid fa-phone btn-Conect"></button>
+                            <div class="content-Conect">
+                                <div class="imgbox">
+                                    <img src="img/rr.png" alt="" class="img-Conect">
+                                </div>
+                                <div class="info">
+                                <div class="name-job">
+                                    <h2>Alabbas Aswad</h2>
+                                    <h4>Front-End Developer</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        My name is Alabbas Aswad
+                                        I am 19 years old
+                                        A student in the first year of the Institute
+                                    </p>
+                                </div>
+                                <div class="skills">
+                                    <i class="fa-brands fa-html5 i-Conect" style="color: rgb(219, 150, 22);"></i>
+                                    <i class="fa-brands fa-css3-alt i-Conect" style="color:rgb(32, 32, 201) ;"></i>
+                                    <i class="fa-brands fa-js-square i-Conect" style="color:rgb(174, 174, 5) ;"></i>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="icons-conect">
+                                <a href="https://t.me/AL_ABBAS2"target="_blank"><i class="fa-brands fa-telegram i-Conect" style="color: #00aaee;" ></i></a>
+                                <a href="https://www.facebook.com/Alabbasaswad2"target="_blank"><i class="fa-brands fa-facebook i-Conect"  style="color: #004bee;" ></i></a>
+                                <a href="https://instagram.com/alabbas.aswad?igshid=YmMyMTA2M2Y="target="_blank"><i class="fa-brands fa-instagram i-Conect"  style="color: #e200ee;" ></i></a>
+                                <a href="https://wa.me/+963965391738"target="_blank"><i class="fa-brands fa-whatsapp i-Conect"  style="color: #0a9d0a;" ></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card-contect N">
+                            <button class="fa-solid fa-phone  btn-Conect"></button>
+                            <div class="content-Conect">
+                                <div class="imgbox">
+                                    <img src="img/ll.png" alt="" class="img-Conect">
+                                </div>
+                                <div class="info">
+                                <div class="name-job">
+                                    <h2>Nazir Hajjoun</h2>
+                                    <h4>Front-End Developer</h4>
+                                </div>
+                                <div class="txt">
+                                    <p>My name is Nazir Hajjoun
+                                    I am 19 years old
+                                    A student in the first year of the Institute
+                                    </p>
+                                </div>
+                                <div class="skills">
+                                    <i class="fa-brands fa-html5 i-Conect" style="color: rgb(219, 150, 22);"></i>
+                                    <i class="fa-brands fa-css3-alt i-Conect" style="color:rgb(32, 32, 201) ;"></i>
+                                    <i class="fa-brands fa-js-square i-Conect" style="color:rgb(174, 174, 5) ;"></i>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="icons-conect">
+                                <a href="https://t.me/H_Nazir"target="_blank"><i class="fa-brands fa-telegram i-Conect"  style="color: #00aaee;"></i></a>
+                                <a href="https://www.facebook.com/nazer.hajjon/"target="_blank"><i class="fa-brands fa-facebook i-Conect"  style="color: #004bee;" ></i></a>
+                                <a href="https://instagram.com/n_a__8_7?igshid=YmMyMTA2M2Y="target="_blank"><i class="fa-brands fa-instagram i-Conect"  style="color: #e200ee;" ></i></a>
+                                <a href="https://wa.me/+306970646964"target="_blank"><i class="fa-brands fa-whatsapp i-Conect"  style="color: #0a9d0a;" ></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                        <!--***********************************************  End Conect Us ************************************************* -->
+
+                        <!--***********************************************  Start Footer Us *********************************************** -->
+                        <footer dir="ltr" class="footer-distributed" id="About">
+
+                            <div class="footer-left">
+                                <h3>N_A<span class="footer-span">Developer</span></h3>
+                        
+                                <p class="footer-links">
+                                    <a href="#home">Home</a>
+                                    |
+                                    <a href="#Channels">Channels</a>
+                                    |
+                                    <a href="#Video">Video</a>
+                                    |
+                                    <a href="#Connect">Connect</a>
+                                    |
+                                    <a href="#About">About</a>
+                                </p>
+                        
+                                <p class="footer-company-name">Copyright © 2022 <strong>N_A Developer</strong>&nbsp;<u>Free Copy Right</u></p>
+                            </div>
+                        
+
+                            <div class="footer-right">
+                                <p class="footer-company-about">
+                                    <span>About the Collage</span>
+                                    <strong>IT Collage</strong>It is an engineering branch that aims to systematically develop, maintain and operate software systems, provide appropriate network solutions for computer connectivity, and ensure safe access to data at any time, anywhere. It also aims to automate tasks that require intelligent behavior that mimics human behavior, and to provide economically effective solutions to practical problems to serve humans.
+                                </p>
+                                <div class="footer-icons">
+                                    <a href="https://www.facebook.com/groups/565608747185629/?ref=share" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://t.me/info_idleb"  target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                    <a href="https://www.facebook.com/groups/458631035048940/?ref=share"  target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="https://t.me/nerd_technology_bot"  target="_blank"><i class="fa-solid fa-robot"></i></a>
+
+                                    
+                                </div>
+                            </div>
+                            <div class="footer-center">
+                                <div class="top"></div>
+                                <div class="middle">
+                                    <span class="one"></span>
+                                    <span class="two"></span>
+                                    <span class="three"></span>
+                                </div>
+                                <div class="bottom"></div>
+                            </div>
+                        </footer>
+                        <!--***********************************************  End Footer Us *********************************************** -->
+</div>
+
+<script>
+    let LightMood = document.querySelector('.light');
+    let DarkMood = document.querySelector('.night');
+    let BlueColor = document.querySelector(".Blue");
+    let VioletColor = document.querySelector(".Violet");
+    let GreenColor = document.querySelector(".Green");
+    
+    let header = document.querySelector('header');
+    let open_icon = document.querySelector('.open_icon');
+    let close_icon = document.querySelector('.close_icon');
+    let menu = document.querySelector('.container_mneu');
+    let titles = document.querySelectorAll('.text');
+    let channel_h2 = document.querySelectorAll(".channel-h2");
+    let chanell_a =document.querySelectorAll('.chanell-a');
+    let mneu_a = document.querySelectorAll('.mneu-a');
+    let active = document.querySelector('.active');
+    let footer_span = document.querySelector('.footer-span');
+    let landing_span = document.querySelector('.landing-span')
+    let test = false;
+    let v  = document.querySelector('.video-js');
+    let start_video = document.querySelector('.start-video');
+    let X_video = document.querySelector('.X-video');
+    
+    function video ()
+    {
+        v.style.display = 'none';
+        v.muted = true;
+        X_video.style.display = 'none';
+        start_video.style.display = 'none';
+        
+    }
+    function open_close_menu()
+    {
+        if(test === false)
+        {
+            open_icon.style.display = 'none';
+            close_icon.style.display = 'block';
+            test = true;
+            menu.style.width = '270px';
+        }
+        else if(test === true)
+        {
+            open_icon.style.display = 'block';
+            close_icon.style.display = 'none';
+            menu.style.width = '0%';
+            test = false;
+        }
+    }
+    
+    function Lighted ()
+    {
+        document.body.style.background ="#ddd";
+        DarkMood.style.color = '#333';
+        LightMood.style.color = '#ff0';
+        menu.style.background ='#d3d9d1e3';
+        for(i = 0 ; i<mneu_a.length ; i++)
+        mneu_a[i].style.color ='#222';
+    
+        active.style.background = '#222';
+        active.style.color='#ddd';
+        land_img.src ='img/landing.jpg';
+    }
+    
+    function Darked ()
+    {
+        document.body.style.background ="#333";
+        DarkMood.style.color = 'rgb(0, 64, 255)';
+        LightMood.style.color = '#333';
+        menu.style.background ='#151515';
+        for(i = 0 ; i<mneu_a.length ; i++)
+        mneu_a[i].style.color ='#ddd';
+        active.style.background = '#666';
+        active.style.color='#ddd';
+        land_img.src ='img/night-landing.jpg';
+        
+    
+    }
+    
+    function Blued()
+    {
+    
+        BlueColor.style.color="var(--second-color)";
+        VioletColor.style.color='#333';
+        GreenColor.style.color='#333';
+        for(i = 0 ; i <titles.length ; i++)
+        titles[i].style.color ="var(--second-color)";
+        for(i = 0 ; i <channel_h2.length ; i++)
+        {
+        channel_h2[i].style.color="var(--second-color)";
+        chanell_a[i].style.color = "var(--second-color)";
+        chanell_a[i].style.borderColor = "var(--second-color)";
+        }
+        start_video.style.background = "var(--second-color)";
+        X_video.style.background = "var(--second-color)";    }
+    function Violeted()
+    {
+        BlueColor.style.color="#333";
+        VioletColor.style.color ="var(--three-color)";
+        GreenColor.style.color='#333';
+        for(i = 0 ; i <titles.length ; i++)
+            titles[i].style.color ="var(--three-color)";
+            for(i = 0 ; i <channel_h2.length ; i++)
+            {
+            channel_h2[i].style.color="var(--three-color)";
+            chanell_a[i].style.color = "var(--three-color)";
+            chanell_a[i].style.borderColor = "var(--three-color)";
+            }
+            footer_span.style.color = "var(--three-color)";
+            start_video.style.background = "var(--three-color)";
+        X_video.style.background = "var(--three-color)";
+    
+    
+        }
+    
+    function Greened()
+    {
+        BlueColor.style.color="#333";
+        VioletColor.style.color ="#333";
+        GreenColor.style.color="var(--main-color)";
+
+
+        for(i = 0 ; i <titles.length ; i++)
+        titles[i].style.color ="var(--main-color)";
+    
+        for(i = 0 ; i <channel_h2.length ; i++)
+            {
+            channel_h2[i].style.color="var(--main-color)";
+            chanell_a[i].style.color = "var(--main-color)";
+            chanell_a[i].style.borderColor = "var(--main-color)";
+            }
+            footer_span.style.color = "var(--main-color)";
+
+    
+    }
+    
+    function closemneuside()
+    {
+        menu.style.width ='0px';
+        open_icon.style.display = 'block';
+        close_icon.style.display = 'none';
+        test =false;
+    }
+    
+    </script>
+</body>
+</html>
